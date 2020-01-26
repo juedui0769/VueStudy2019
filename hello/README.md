@@ -59,6 +59,20 @@ error: `data` property in component must be a function (vue/no-shared-component-
 
 - 使用`vue create hello`创建出来的工程和“介绍 | 声明式渲染”中的有些微的不同，如果完全安装官网文档编写，会出现上面的错误提示。
 
+### Vue CLI | 快速原型开发
+
+- <https://cli.vuejs.org/zh/guide/prototyping.html>
+- 上面的报错没有解决，在vue create的工程中也不知道如何修改。无奈，只得从Vue CLI的文档中找解决方案。
+- 还原`\hello\src\App.vue`文件，停掉当前启动的服务`Ctrl + C`
+- 新建目录和文件`study\01VueStart.vue`,使用`vue serve ./study/01VueStart.vue`启动
+    - `yarn global add @vue/cli-service-global`
+    - 先安装
+- 还是报错，`*.vue`的写法我没搞懂。要去补习下。
+
+
+
+
+
 
 
 
