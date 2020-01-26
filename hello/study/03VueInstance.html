@@ -33,6 +33,7 @@
         <button v-on:click="foo = 'baz'">Change it</button>
     </div>
     <script>
+
         var obj = {
             foo: 'bar'
         }
@@ -40,6 +41,23 @@
         var app1 = new Vue({
             el: '#app-1',
             data: obj
+        })
+    </script>
+    <hr/>
+    除了数据属性，Vue 实例还暴露了一些有用的实例属性与方法。它们都有前缀 `$`，以便与用户定义的属性区分开来
+    <div id="example"></div>
+    <script>
+        console.log(">> 实例属性与方法");
+        var data = { a: 1 }
+        var vm = new Vue({
+            el: '#example',
+            data: data
+        })
+        console.log("vm.$data === data : ", vm.$data === data);
+        console.log("vm.$el === document.getElementById('example') : ", vm.$el === document.getElementById('example'));
+        vm.$watch('a', function(newVal, oldVal){
+            console.log("newVal: ", newVal)
+            console.log("oldVal: ", oldVal)
         })
     </script>
 </body>
