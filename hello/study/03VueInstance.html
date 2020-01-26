@@ -26,5 +26,21 @@
         console.log("vm.a : ", vm.a);
         console.log("data.a : ", data.a);
     </script>
+    <hr/>
+    <div id="app-1">
+        <p>{{ foo }}</p>
+        这里的 `foo` 不会更新！
+        <button v-on:click="foo = 'baz'">Change it</button>
+    </div>
+    <script>
+        var obj = {
+            foo: 'bar'
+        }
+        Object.freeze(obj)
+        var app1 = new Vue({
+            el: '#app-1',
+            data: obj
+        })
+    </script>
 </body>
 </html>
