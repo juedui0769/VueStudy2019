@@ -69,7 +69,15 @@ error: `data` property in component must be a function (vue/no-shared-component-
     - 先安装
 - 还是报错，`*.vue`的写法我没搞懂。要去补习下。
 
+### 使用`anywhere`启动一个服务完成练习
 
+- `anywhere`是我经常使用的一个nodejs小工具，我本地已经安装了，它可以启动一个web服务。
+- 我现在改为使用最原始的方式来完成Vue的启蒙教程。
+- 在`study`目录下继续新建文件，这回不再新建`*.vue`的文件，而是直接创建`*.html`的文件，vue的引用就使用cdn
+- 使用我已知的 <https://www.bootcdn.cn/vue/> 。
+- 创建文件`02VueStart.html`
+- 在`study`目录下运行`anywhere`
+- 然后访问 <http://localhost:8000/02VueStart.html>
 
 
 
