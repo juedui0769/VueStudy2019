@@ -46,6 +46,20 @@ npm run serve
 
 - 使用npm也是可以的
 
+### 官网-起步
+
+- <https://cn.vuejs.org/v2/guide/>
+- 介绍 | 声明式渲染
+
+#### 报错
+
+```
+error: `data` property in component must be a function (vue/no-shared-component-data) at src\App.vue:14:3:
+```
+
+- 使用`vue create hello`创建出来的工程和“介绍 | 声明式渲染”中的有些微的不同，如果完全安装官网文档编写，会出现上面的错误提示。
+
+
 
 
 
