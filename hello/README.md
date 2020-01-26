@@ -38,6 +38,17 @@ yarn config get registry
 yarn config get cache-folder
 ```
 
+### 使用npm
+
+```
+npm run serve
+```
+
+- 使用npm也是可以的
+
+
+
+
 
 
 
