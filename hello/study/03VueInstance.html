@@ -1,0 +1,30 @@
+<!-- 03VueInstance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<body>
+    <h3>数据与方法</h3>
+    看控制台
+    <script>
+        console.log(">> 数据与方法");
+        var data = { a: 1}
+        var vm = new Vue({
+            data: data
+        })
+        console.log( "vm.a == data.a :", vm.a == data.a );
+        console.log("vm.a : ", vm.a);
+        vm.a = 2
+        console.log("vm.a : ", vm.a);
+        console.log("data.a : ", data.a);
+        data.a = 3
+        console.log("vm.a : ", vm.a);
+        console.log("data.a : ", data.a);
+    </script>
+</body>
+</html>

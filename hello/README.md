@@ -79,6 +79,20 @@ error: `data` property in component must be a function (vue/no-shared-component-
 - 在`study`目录下运行`anywhere`
 - 然后访问 <http://localhost:8000/02VueStart.html>
 
+### Vue实例
+
+- <https://cn.vuejs.org/v2/guide/instance.html>
+- 值得注意的是只有当实例被创建时就已经存在于`data`中的属性才是**响应式**的。
+- 使用`Object.freeze()`会阻止修改现有的属性，导致响应系统无法再追踪变化。
+
+
+
+
+
+
+
+
+
 
 
 
