@@ -84,8 +84,10 @@ error: `data` property in component must be a function (vue/no-shared-component-
 - <https://cn.vuejs.org/v2/guide/instance.html>
 - 值得注意的是只有当实例被创建时就已经存在于`data`中的属性才是**响应式**的。
 - 使用`Object.freeze()`会阻止修改现有的属性，导致响应系统无法再追踪变化。
-
-
+- 选项/数据
+    - <https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE>
+- 实例属性
+    - <https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7>
 
 
 
