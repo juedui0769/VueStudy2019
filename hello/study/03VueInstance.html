@@ -60,5 +60,18 @@
             console.log("oldVal: ", oldVal)
         })
     </script>
+    <h3>实例生命周期钩子</h3>
+    <script>
+        console.log(">> 实例生命周期钩子");
+        new Vue({
+            data: {
+                a: 101
+            },
+            created: function() {
+                // `this`指向 vm 实例
+                console.log('a is: ' + this.a)
+            }
+        })
+    </script>
 </body>
 </html>
