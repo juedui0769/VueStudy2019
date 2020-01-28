@@ -92,6 +92,20 @@ error: `data` property in component must be a function (vue/no-shared-component-
 ### 模板语法
 
 - <https://cn.vuejs.org/v2/guide/syntax.html>
+- 插值
+- 指令
+- 缩写
+
+### 计算属性和侦听器
+
+- <https://cn.vuejs.org/v2/guide/computed.html>
+
+
+
+
+
+
+
 
 
 
