@@ -89,6 +89,15 @@ error: `data` property in component must be a function (vue/no-shared-component-
 - 实例属性
     - <https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7>
 
+### 模板语法
+
+- <https://cn.vuejs.org/v2/guide/syntax.html>
+
+
+
+
+
+
 
 
 

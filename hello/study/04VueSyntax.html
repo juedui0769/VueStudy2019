@@ -1,0 +1,32 @@
+<!-- 03VueInstance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<body>
+    <div id="app-1">
+        <h3>文本</h3>
+        <span>Message: {{ msg }}</span>
+        <h3>v-once</h3>
+        <span v-once>这个将不会改变: {{ msg }}</span>
+        <h3>原始HTML</h3>
+        <p>Using mustaches: {{ rawHtml }}</p>
+        <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+        <span><b>注意：</b>v-html 很危险，绝对不要对用户提供的内容使用v-html</span>
+    </div>
+    <script>
+        var app1 = new Vue({
+            el: '#app-1',
+            data: {
+                msg: '{{ msg }}',
+                rawHtml: '<span style="color:red">This should be red.</span>'
+            }
+        })
+    </script>
+</body>
+</html>
