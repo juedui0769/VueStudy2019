@@ -1,0 +1,34 @@
+<!-- 03VueInstance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<body>
+	<h3>computed</h3>
+    <div id="demo">
+		<p>firstName: <input v-model="firstName"></p>
+		<p>lastName: <input v-model="lastName"></p>
+		<p>fullName : {{ fullName }}</p>
+	</div>
+	
+    <script>
+        var demo = new Vue({
+            el: '#demo',
+            data: {
+                firstName: 'Hello',
+				lastName: 'World'
+            },
+            computed: {
+				fullName: function() {
+					return this.firstName + ' ' + this.lastName;
+				}
+			}
+        })
+    </script>
+</body>
+</html>

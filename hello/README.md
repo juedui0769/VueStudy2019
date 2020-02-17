@@ -101,8 +101,14 @@ error: `data` property in component must be a function (vue/no-shared-component-
 - <https://cn.vuejs.org/v2/guide/computed.html>
 - 计算属性缓存 vs 方法
 - 计算属性 vs 侦听属性
+	- 05VueComputed__02__fullname_watch
+	- 05VueComputed__03__fullname_computed
+- 计算属性的setter
+	- 05VueComputed__04__fullname_setter
 
+### 侦听器
 
+- 06VueComputed__watch
 
 
 
